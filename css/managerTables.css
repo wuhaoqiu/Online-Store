@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+table, th, td {
+    border: solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+}
+#a{
+    margin-left: 33em;
+    margin-right: auto;
+}
+#warn{
+    text-align: center;
+    color: red;
+}
+
+

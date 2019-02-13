@@ -1,0 +1,200 @@
+.navigation {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  padding: 20px 25px 0px;
+}
+.navigation a {
+  float: right;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navigation .verticalline {
+  border-left: 6px solid #0099cc;
+  height: 80px;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.navigation .dropdown {
+  float: right;
+  overflow: hidden;
+  /* Dropdown content (hidden by default) */
+}
+.navigation .dropdown .dbutton {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 20px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight: bold;
+}
+.navigation .dropdown .dcontent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.navigation .dropdown .dcontent a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.navigation .dropdown .dcontent a:hover {
+  background-color: #0033cc;
+}
+.navigation a:not(.brand):hover,
+.navigation .dropdown:hover .dbutton {
+  background-color: white;
+  color: #222222;
+}
+.navigation .dropdown:hover .dcontent {
+  display: block;
+}
+.navigation .brand {
+  float: left;
+  padding: 25px 0;
+  height: auto;
+}
+
+main .category{
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+  padding: 0.5em 0em;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  background-image: url("../images/breadcrumb.jpg");
+  background-size: auto;
+}
+
+.category a, span{
+  font-size: 12pt;
+  color:#dddddd;
+}
+
+img{
+  width:auto;
+  height:auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.products-list{
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  background-color: #eeeeee;
+}
+
+.products td{
+  border:none;
+  padding: 1.5em;
+}
+
+.products .product-name a{
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 12pt;
+  color:#333;
+}
+
+.products .price{
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 10pt;
+  color:#555;
+}
+
+.footer {
+  display: flex;
+  padding: 20px;
+  /* Some padding */
+  text-align: center;
+  /* Center text*/
+  background: black;
+  width: 100%;
+  justify-content: center;
+}
+.footer p {
+  padding-left: 15px;
+  color: aliceblue;
+  text-align: left;
+  font-family: cursive;
+  font-weight: bold;
+}
+.footer .left1,
+.footer .left2,
+.footer .left3,
+.footer .left4,
+.footer .left5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .left1 a,
+.footer .left2 a,
+.footer .left3 a,
+.footer .left4 a,
+.footer .left5 a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: grey;
+  font-weight: bold;
+}
+.footer .left1 a:hover,
+.footer .left2 a:hover,
+.footer .left3 a:hover,
+.footer .left4 a:hover,
+.footer .left5 a:hover {
+  color: antiquewhite;
+}
+.footer .left1 {
+  flex-basis: 25%;
+}
+.footer .left2,
+.footer .left3,
+.footer .left4 {
+  flex-basis: 15%;
+}
+.footer .left5 {
+  flex-basis: 25%;
+  font-size: 20px;
+}
+.footer .left5 input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 80%;
+  background: #f1f1f1;
+  float: left;
+}
+.footer .left5 button {
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  float: left;
+  min-width: 80px;
+}
+.footer .left5 form.example button:hover {
+  background: #0b7dda;
+}

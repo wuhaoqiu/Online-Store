@@ -1,0 +1,356 @@
+.navigation {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  padding: 20px 25px 0px;
+  height: 6em;
+}
+.navigation a {
+  float: right;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navigation .verticalline {
+  border-left: 6px solid #0099cc;
+  height: 80px;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.navigation .dropdown {
+  float: right;
+  overflow: hidden;
+  /* Dropdown content (hidden by default) */
+}
+.navigation .dropdown .dbutton {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 20px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight: bold;
+}
+.navigation .dropdown .dcontent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.navigation .dropdown .dcontent a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.navigation .dropdown .dcontent a:hover {
+  background-color: #0033cc;
+}
+.navigation a:not(.brand):hover,
+.navigation .dropdown:hover .dbutton {
+  background-color: white;
+  color: #222222;
+}
+.navigation .dropdown:hover .dcontent {
+  display: block;
+}
+.navigation .brand {
+  float: left;
+  padding: 25px 0;
+  height: auto;
+}
+
+img{
+  width:auto;
+  height:auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product{
+  margin: 3px;
+  background-color: #eeeeee;
+}
+
+#ProductImage{
+  float: left;
+  width:600px;
+  height: 500px;
+}
+
+.largeImage{
+  float:left;
+  margin-top:3em;
+  margin-left:3em;
+  width:500px;
+  height:320px;
+}
+
+#smallImage-1{
+  float:left;
+  width: 78px;
+  height:50px;
+  margin-left: 13em;
+  margin-top:1em;
+  margin-bottom: 1em;
+}
+
+#smallImage-2{
+  float:left;
+  width: 78px;
+  height:50px;
+  margin-left: 2em;
+  margin-top:1em;
+  margin-bottom: 1em;
+}
+
+.ProductInfo{
+  margin-left: 600px;
+  padding-left: 25px;
+  height: 500px;
+}
+
+#ProductTitle{
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 25pt;
+  color: #444444;
+  position: relative;
+  top: 2em;
+  left: 0em;
+  width: 85%;
+}
+
+#ProductPrice{
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 10pt;
+  color:#aaaaaa;
+  position: relative;
+  top:2.5em;
+  left:0em;
+  width: 15em;
+}
+
+#AddToCart{
+  position: relative;
+  top: 0.2em;
+  left: 9em;
+}
+
+#ProductIntro{
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 10pt;
+  color: #444444;
+  position: relative;
+  top: 2em;
+  left:0em;
+  width: 85%;
+}
+
+#all-reviews{
+  width: auto;
+  margin: 2em;
+  border-top: solid thin #888888;
+  padding: 1em;
+}
+
+#review-title{
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 20pt;
+  color: #444444;
+  margin: 0em;
+  padding: 0em;
+}
+
+#new-review{
+  margin: 0em 3em;
+  padding: 0.5em;
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 12pt;
+  color: #ffffff;
+  background-color: #222222;
+}
+
+.customer-review{
+  margin-top: 1em;
+  padding: 0.7em 0em;
+  border-top: solid thin #cccccc;
+  width: 70%;
+}
+
+.customer-info{
+  width:100%;
+  margin: 0em;
+  padding: 0em;
+  vertical-align: middle;
+}
+
+.customer-picture{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.User-name{
+  display: inline-block;
+  padding: 0em 1em;
+  vertical-align: top;
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 14pt;
+  color: #444444;
+}
+
+.User-name span{
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.review-content{
+  margin: 0em;
+  padding: 5px;
+}
+
+.review-overview{
+  margin:0em;
+  padding: 0em;
+}
+
+.review-time{
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 8pt;
+  color: #aaaaaa;
+  display: inline-block;
+  width: 10em;
+  margin: 0px;
+}
+
+.rating{
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 10pt;
+  color: #777777;
+}
+
+.review{
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 11pt;
+  color: #666666;
+  margin: 0em;
+}
+
+#write-review{
+  width: 70%;
+  margin-top: 2em;
+}
+
+#write-review-input{
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 11pt;
+  width: 80%;
+  height: 1.5em;
+  vertical-align: text-top;
+}
+
+#write-review-submit{
+  font-size: 11pt;
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  display: block;
+  background-color: #222222;
+  color: #ffffff;
+  margin: 0.5em;
+  padding: 0.1em;
+}
+
+/* #write-review-form{
+width: 50em;;
+} */
+
+.footer {
+  display: flex;
+  padding: 20px;
+  /* Some padding */
+  text-align: center;
+  /* Center text*/
+  background: black;
+  width: 100%;
+  justify-content: center;
+}
+.footer p {
+  padding-left: 15px;
+  color: aliceblue;
+  text-align: left;
+  font-family: cursive;
+  font-weight: bold;
+}
+.footer .left1,
+.footer .left2,
+.footer .left3,
+.footer .left4,
+.footer .left5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .left1 a,
+.footer .left2 a,
+.footer .left3 a,
+.footer .left4 a,
+.footer .left5 a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: grey;
+  font-weight: bold;
+}
+.footer .left1 a:hover,
+.footer .left2 a:hover,
+.footer .left3 a:hover,
+.footer .left4 a:hover,
+.footer .left5 a:hover {
+  color: antiquewhite;
+}
+.footer .left1 {
+  flex-basis: 25%;
+}
+.footer .left2,
+.footer .left3,
+.footer .left4 {
+  flex-basis: 15%;
+}
+.footer .left5 {
+  flex-basis: 25%;
+  font-size: 20px;
+}
+.footer .left5 input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 80%;
+  background: #f1f1f1;
+  float: left;
+}
+.footer .left5 button {
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  float: left;
+  min-width: 80px;
+}
+.footer .left5 form.example button:hover {
+  background: #0b7dda;
+}

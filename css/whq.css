@@ -1,0 +1,393 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  height: 400px;
+  color: white;
+  /* white text color */
+  background-image: url(../images/sub5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+}
+.header .headertext {
+  border: 3px solid #f1f1f1;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60%;
+  width: 80%;
+  font-weight: 400;
+  padding-top: 10px;
+}
+.header .headertext h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+}
+.header .headertext span {
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+  padding: 20px 0 15px;
+  width: 100%;
+}
+.navigation {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  padding: 20px 25px 0px;
+}
+.navigation a {
+  float: right;
+  font-size: 18px;
+  color:cornflowerblue;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navigation .verticalline {
+  border-left: 6px solid #0099cc;
+  height: 80px;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.navigation .dropdown {
+  float: right;
+  overflow: hidden;
+  /* Dropdown content (hidden by default) */
+}
+.navigation .dropdown .dbutton {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: cornflowerblue;
+  padding: 20px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight: bold;
+}
+.navigation .dropdown .dcontent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.navigation .dropdown .dcontent a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.navigation .dropdown .dcontent a:hover {
+  background-color: #0033cc;
+}
+.navigation a:not(.brand):hover,
+.navigation .dropdown:hover .dbutton {
+  background-color: white;
+}
+.navigation .dropdown:hover .dcontent {
+  display: block;
+}
+.navigation .brand {
+  float: left;
+  padding: 25px 0;
+  height: auto;
+}
+@media screen and (max-width: 700px) {
+  .navigation a,
+  .navigation .verticalline {
+    float: none;
+    width: 100%;
+  }
+}
+.slideshow {
+  max-width: 100%;
+  height: 600p;
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.slideshow .slidepicture {
+  display: none;
+  height: inherit;
+}
+.slideshow .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.slideshow .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.6s ease;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slideshow .prev:hover,
+.slideshow .next:hover {
+  background-color: black;
+}
+.slideshow .text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+}
+.slideshow .dots {
+  position: absolute;
+  bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.slideshow .dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.slideshow .active,
+.slideshow .dot:hover {
+  background-color: black;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 8px;
+  }
+}
+.middlehead h2 {
+  background: url("../images/line.png") no-repeat bottom center;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: fantasy;
+  letter-spacing: 1px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+.content a{
+    text-decoration: none;
+/*    font-size: */
+    color: aliceblue;
+}
+
+.content a:hover{
+    color: aqua;
+}
+.content img {
+  display: block;
+  max-height: 100%;
+  width: 100%;
+}
+.content .overlayleft {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #a0c8c8;
+  overflow: hidden;
+  height: 0;
+  transition: .5s ease;
+  width: 100%;
+}
+.content .overlaymiddle {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #a0c8c8;
+  overflow: hidden;
+  height: 0;
+  transition: .5s ease;
+  width: 100%;
+}
+.content .overlayright {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #a0c8c8;
+  overflow: hidden;
+  height: 0;
+  transition: .5s ease;
+  width: 100%;
+}
+.content .text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.content .contentleft {
+  flex-basis: 30%;
+  height: inherit;
+  position: relative;
+}
+.content .contentleft:hover .overlayleft {
+  bottom: 0;
+  height: 100%;
+}
+.content .contentmiddle {
+  flex-basis: 30%;
+  height: inherit;
+  position: relative;
+}
+.content .contentmiddle:hover .overlaymiddle {
+  bottom: 0;
+  height: 100%;
+}
+.content .contentright {
+  flex-basis: 30%;
+  height: inherit;
+  position: relative;
+}
+.content .contentright:hover .overlayright {
+  bottom: 0;
+  height: 100%;
+}
+@media screen and (max-width: 700px) {
+  .content {
+    flex-direction: column;
+  }
+}
+.brandrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 80px;
+  width: 100%;
+  justify-content: space-between;
+  background: url("../images/line.png") no-repeat top center;
+}
+.brandrow .item {
+  flex: 1;
+}
+.footer {
+  display: flex;
+  padding: 20px;
+  /* Some padding */
+  text-align: center;
+  /* Center text*/
+  background: black;
+  width: 100%;
+  justify-content: center;
+}
+.footer p {
+  padding-left: 15px;
+  color: aliceblue;
+  text-align: left;
+  font-family: cursive;
+  font-weight: bold;
+}
+.footer .left1,
+.footer .left2,
+.footer .left3,
+.footer .left4,
+.footer .left5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .left1 a,
+.footer .left2 a,
+.footer .left3 a,
+.footer .left4 a,
+.footer .left5 a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: grey;
+  font-weight: bold;
+}
+.footer .left1 a:hover,
+.footer .left2 a:hover,
+.footer .left3 a:hover,
+.footer .left4 a:hover,
+.footer .left5 a:hover {
+  color: antiquewhite;
+}
+.footer .left1 {
+  flex-basis: 25%;
+}
+.footer .left2,
+.footer .left3,
+.footer .left4 {
+  flex-basis: 15%;
+}
+.footer .left5 {
+  flex-basis: 25%;
+  font-size: 20px;
+}
+.footer .left5 input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 80%;
+  background: #f1f1f1;
+  float: left;
+}
+.footer .left5 button {
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  float: left;
+  min-width: 80px;
+}
+.footer .left5 form.example button:hover {
+  background: #0b7dda;
+}

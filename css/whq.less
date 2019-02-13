@@ -1,0 +1,482 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+//set style for header div
+.header {
+    height: 400px;
+    color: white;
+    /* white text color */
+    background-image: url(../images/sub5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+
+
+    .headertext {
+        border: 3px solid #f1f1f1;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60%;
+        width: 80%;
+        font-weight: 400;
+        padding-top: 10px;
+
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+            color: #fff;
+            line-height: 1;
+        }
+
+        //end of .navigation .headertext h1
+
+        span {
+            color: #fff;
+            display: inline-block;
+            font-size: 30px;
+            padding: 20px 0 15px;
+            width: 100%;
+        }
+    }
+
+    //end of .headertext
+}
+
+//end of header
+
+
+//set style for navigation bar
+.navigation {
+    @fontcolor: rgb(0, 51, 204);
+    @fontsize: 18px;
+    @paddle: 20px 20px;
+
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+    padding: 20px 25px 0px;
+
+    a {
+        float: right;
+        font-size: @fontsize;
+        color: @fontcolor;
+        text-align: center;
+        padding: @paddle;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    //.navigation a
+
+    .verticalline {
+        border-left: 6px solid rgb(0, 153, 204);
+        height: 80px;
+        float: right;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    //end of .navigation .verticalline
+
+    .dropdown {
+        float: right;
+        overflow: hidden;
+
+        .dbutton {
+            font-size: @fontsize;
+            border: none;
+            outline: none;
+            color: @fontcolor;
+            padding: @paddle;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            font-weight: bold;
+
+        }
+
+        //.navigation .dropdown .dbutton
+
+        //end of .dbutton
+
+        /* Dropdown content (hidden by default) */
+        .dcontent {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+
+            a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            //end of .navigationo .drpdown .dcontent a
+
+            a:hover {
+                background-color: @fontcolor;
+            }
+
+            //end of .navigationo .drpdown .dcontent a
+        }
+
+        //end of dcontent
+
+    }
+
+    //end of .navigation .dropdown
+
+    a:not(.brand):hover,
+    .dropdown:hover .dbutton {
+        background-color: white;
+    }
+
+    //disply content when hover
+    .dropdown:hover .dcontent {
+        display: block;
+    }
+
+    .brand {
+        float: left;
+        padding: 25px 0;
+        height: auto;
+    }
+}
+
+//end of navigation
+@media screen and (max-width: 700px) {
+
+    .navigation a,
+    .navigation .verticalline {
+        float: none;
+        width: 100%;
+    }
+}
+
+//set property for slideshow
+.setbuttons() {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    transition: 0.6s ease;
+}
+
+.slideshow {
+    max-width: 100%;
+    height: 600p;
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+
+    .slidepicture {
+        display: none;
+        height: inherit;
+    }
+
+    //end of .slideshow .slidepicturee
+
+
+    .prev {
+        .setbuttons();
+        border-radius: 0 3px 3px 0;
+    }
+
+    .next {
+        .setbuttons();
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: black;
+    }
+
+    .text {
+        color: #f2f2f2;
+        font-size: 25px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 60px;
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: black;
+    }
+
+
+
+}
+
+//end of slideshow
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 8px;
+    }
+}
+
+.middlehead h2 {
+    background: url("../images/line.png") no-repeat bottom center;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: fantasy;
+    letter-spacing: 1px;
+}
+
+//set property for main content
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+
+    //general propert for items
+    .itemproperty() {
+        flex-basis: 30%;
+        height: inherit;
+        position: relative;
+    }
+
+    img {
+        display: block;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .generaloverlay() {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(160,200,200);
+        overflow: hidden;
+        height: 0;
+        transition: .5s ease;
+        width: 100%;
+    }
+
+    .overlayleft {
+        .generaloverlay();
+    }
+
+    .overlaymiddle {
+        .generaloverlay();
+    }
+
+    .overlayright {
+        .generaloverlay();
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+
+    .contentleft {
+        .itemproperty();
+    }
+
+    .contentleft:hover .overlayleft {
+        bottom: 0;
+        height: 100%;
+    }
+
+    .contentmiddle {
+        .itemproperty();
+
+    }
+
+    .contentmiddle:hover .overlaymiddle {
+        bottom: 0;
+        height: 100%;
+    }
+
+    //end of .content .contentleft
+
+    .contentright {
+        .itemproperty();
+
+    }
+
+    .contentright:hover .overlayright {
+        bottom: 0;
+        height: 100%;
+    }
+
+    //end of .content .contentright
+}
+
+//end of .content
+
+@media screen and (max-width: 700px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+//set property for brand
+
+.brandrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    width: 100%;
+    justify-content: space-between;
+    background: url("../images/line.png") no-repeat top center;
+
+    .item {
+        flex: 1;
+    }
+}
+
+
+//set property for footer
+.footer {
+    display: flex;
+    padding: 20px;
+    /* Some padding */
+    text-align: center;
+    /* Center text*/
+    background: black;
+    width: 100%;
+    justify-content: center;
+
+    p {
+        padding-left: 15px;
+        color: aliceblue;
+        text-align: left;
+        font-family: cursive;
+        font-weight: bold;
+    }
+
+    .left1,
+    .left2,
+    .left3,
+    .left4,
+    .left5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            color: grey;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: antiquewhite;
+        }
+    }
+
+    .left1 {
+        flex-basis: 25%;
+    }
+
+    .left2,
+    .left3,
+    .left4 {
+        flex-basis: 15%;
+    }
+
+    .left5 {
+        flex-basis: 25%;
+        font-size: 20px;
+
+        input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            width: 80%;
+            background: #f1f1f1;
+            float: left;
+        }
+
+        button {
+            width: 20%;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+            float: left;
+            min-width: 80px;
+        }
+
+        form.example button:hover {
+            background: #0b7dda;
+        }
+    }
+
+    //end of .left5
+}
+
+//
+

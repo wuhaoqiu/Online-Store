@@ -1,0 +1,42 @@
+body{
+    background-color: lightblue;
+}
+img{
+    height: 45em;
+    width: 45em;
+    float: left;
+}
+
+#LogIn{
+    margin-left: 56em;
+    padding-top:15em;
+    
+}
+table{
+    border: 1px solid black;
+}
+th{
+    font-size: 3em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+input{
+    height: 2em;
+    width: 90%;
+    margin-left: 1em;
+}
+#back{
+    display: block;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    width: 5em;
+    margin-left: 70em;
+    margin-top: 10em;
+}
+.highlight{
+    background-color: red;
+}
+.clear{
+    background-color: white;
+}
