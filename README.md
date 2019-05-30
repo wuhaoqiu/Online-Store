@@ -9,11 +9,11 @@ Haoqiu Wu
 This website is built by original html/css, javascript and php. This means that no framewords were used during development.
 
 This website has following features:
-*
+* P1
 ![alt text](https://github.com/wuhaoqiu/web_store/blob/master/screenshots/feature1.png)
-*
+* P2
 ![alt text](https://github.com/wuhaoqiu/web_store/blob/master/screenshots/feature2.png)
-*
+* P3
 ![alt text](https://github.com/wuhaoqiu/web_store/blob/master/screenshots/feature3.png)
 
 
