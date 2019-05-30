@@ -9,28 +9,28 @@ Haoqiu Wu
 This website is built by original html/css, javascript and php. This means that no framewords were used during development.
 
 This website has following features:
-![alt text](https://github.com/wuhaoqiu/web_store/tree/master/screenshots/feature1.png)
-![alt text](https://github.com/wuhaoqiu/web_store/tree/master/screenshots/feature2.png)
-![alt text](https://github.com/wuhaoqiu/web_store/tree/master/screenshots/feature3.png)
+![alt text](https://github.com/wuhaoqiu/web_store/blob/master/screenshots/feature1.png)
+![alt text](https://github.com/wuhaoqiu/web_store/blob/master/screenshots/feature2.png)
+![alt text](https://github.com/wuhaoqiu/web_store/blob/master/screenshots/feature3.png)
 
 
 ### Part of Screenshots
 
 * Main Page
 
-![alt text](https://github.com/wuhaoqiu/web_store/tree/master/screenshots/main_page.png)
+![alt text](https://github.com/wuhaoqiu/web_store/blob/master/screenshots/main_page.png)
 
 * Products
 
-![alt text](https://github.com/wuhaoqiu/web_store/tree/master/screenshots/products.png)
+![alt text](https://github.com/wuhaoqiu/web_store/blob/master/screenshots/products.png)
 
 * Product Detail
 
-![alt text](https://github.com/wuhaoqiu/web_store/tree/master/screenshots/product_detail.png)
+![alt text](https://github.com/wuhaoqiu/web_store/blob/master/screenshots/product_detail.png)
 
 * Graph of Admin Sale
 
-![alt text](https://github.com/wuhaoqiu/web_store/tree/master/screenshots/admin.png)
+![alt text](https://github.com/wuhaoqiu/web_store/blob/master/screenshots/admin.png)
 
 
 
