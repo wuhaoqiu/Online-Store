@@ -6,7 +6,7 @@ Haoqiu Wu
 
 ### Introduction: 
 
-This website is built by original html/css, javascript and php. This means that no framewords were used during development.
+This website is built by original html/css, javascript and php and MySQL. This means that no framewords were used during development.
 
 This website has following features:
 * P1
